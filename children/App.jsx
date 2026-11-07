@@ -4,7 +4,7 @@ import { BsCart2 } from 'react-icons/bs';
 export default function App() {
     return (
         <main>
-            <Button>
+            <Button variant={true} handleClick={() => {}}>
                 <BsCart2 />
             </Button>
         </main>
