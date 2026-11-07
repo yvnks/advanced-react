@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+button {
+    border: none;
+    font-size: 2rem;
+    background-color: #fff;
+    position: absolute;
+}
+
