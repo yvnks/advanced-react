@@ -1,12 +1,11 @@
 import Button from './components/Button';
-import { BsCart2 } from 'react-icons/bs';
 
 export default function App() {
     return (
         <main>
-            <Button className='green' size='lg' onClick={() => {}}>
-                Cart <BsCart2 />
-            </Button>
+            <Button variant='success'>Success</Button>
+            <Button variant='warning'>Warning</Button>
+            <Button variant='danger'>Danger</Button>
         </main>
     );
 }

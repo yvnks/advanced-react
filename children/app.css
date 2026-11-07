@@ -1,25 +1,31 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
+button.button-success {
+    width: 100px;
+    height: 40px;
+    background-color: #ecfdf5;
+    color: #047857;
+    border: 1px solid #047857;
+    border-radius: 5px;
+    margin-right: 16px;
+    font-weight: bold;
 }
 
-button {
-    border: none;
-    font-size: 2rem;
-    background-color: #fff;
-    position: absolute;
-    cursor: pointer;
+button.button-warning {
+    width: 100px;
+    height: 40px;
+    background-color: #fffbeb;
+    color: #fbbf24;
+    border: 1px solid #fbbf24;
+    border-radius: 5px;
+    margin-right: 16px;
+    font-weight: bold;
 }
 
-.button-lg {
-    font-size: 10rem;
-}
-.button-sm {
-    font-size: 3rem;
-}
-
-.green {
-    color: green;
+button.button-danger {
+    width: 100px;
+    height: 40px;
+    background-color: #fef2f2;
+    color: #f87171;
+    border: 1px solid #f87171;
+    border-radius: 5px;
+    font-weight: bold;
 }
