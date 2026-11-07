@@ -4,8 +4,8 @@ import { BsCart2 } from 'react-icons/bs';
 export default function App() {
     return (
         <main>
-            <Button variant={true} handleClick={() => {}}>
-                <BsCart2 />
+            <Button className='green' size='lg' onClick={() => {}}>
+                Cart <BsCart2 />
             </Button>
         </main>
     );

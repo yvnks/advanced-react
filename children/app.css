@@ -12,3 +12,14 @@ button {
     position: absolute;
     cursor: pointer;
 }
+
+.button-lg {
+    font-size: 10rem;
+}
+.button-sm {
+    font-size: 3rem;
+}
+
+.green {
+    color: green;
+}
