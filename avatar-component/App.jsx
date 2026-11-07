@@ -1,4 +1,3 @@
-import Button from './components/Button';
 import Avatar from './Avatar';
 
 export default function App() {
