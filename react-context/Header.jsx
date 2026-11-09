@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header className={`${value}-theme`}>
-      <h1>{`${value.toUpperCase()}`} Theme</h1>
+      <h1>{`${value[0].toUpperCase() + value.slice(1)}`} Theme</h1>
     </header>
   );
 }

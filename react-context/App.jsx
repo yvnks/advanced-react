@@ -4,7 +4,7 @@ import ThemeContext from './hooks/ThemeContext';
 
 export default function App() {
   return (
-    <div className='container dark-theme'>
+    <div className='container light-theme'>
       <ThemeContext.Provider value='light'>
         <Header />
         <Button />
