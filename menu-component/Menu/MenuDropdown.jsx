@@ -1,17 +1,12 @@
-import React from 'react';
+import { useContext } from 'react';
+import { ThemeContext } from './Menu';
 
-export default function MenuDropdown({ children, open, toggle }) {
-  console.log('Menu Dropdown:', open);
-  console.log('Menu Dropdown:', toggle);
+export default function MenuDropdown({ children }) {
+  const { open } = useContext(ThemeContext);
   return (
     open && (
       <div className='menu-dropdown'>
-        {React.Children.map(children, (child) => {
-          return React.cloneElement(child, {
-            open,
-            toggle,
-          });
-        })}
+        {children}
       </div>
     )
   );

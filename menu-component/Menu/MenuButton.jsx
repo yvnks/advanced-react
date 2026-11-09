@@ -1,7 +1,14 @@
 import Button from '../Button/Button';
+import { useContext } from 'react';
+import { ThemeContext } from './Menu';
 
-export default function MenuButton({ children, toggle, open }) {
-  console.log('Menu Button:', toggle);
-  console.log('Menu Button:', open);
-  return <Button onClick={toggle}>{children}</Button>;
+export default function MenuButton({ children }) {
+
+  // Destructure toggle from ThemeContext.
+  const { toggle } = useContext(ThemeContext);
+
+  return (
+  <Button onClick={toggle}>
+    {children}
+  </Button>);
 }

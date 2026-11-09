@@ -1,4 +1,7 @@
 import React from 'react';
+import { createContext } from 'react';
+
+export const ThemeContext = createContext();
 
 export default function Menu({ children }) {
   const [open, setOpen] = React.useState(true);
@@ -9,12 +12,9 @@ export default function Menu({ children }) {
 
   return (
     <div className='menu'>
-      {
-        // Children takes an arr of elements.
-        React.Children.map(children, (child) => {
-          return React.cloneElement(child, { open, toggle });
-        })
-      }
+      <ThemeContext.Provider value={{ open, toggle }}>
+        {children}
+      </ThemeContext.Provider>
     </div>
   );
 }
