@@ -1,7 +1,4 @@
-import Menu from './Menu/Menu';
-import MenuButton from './Menu/MenuButton';
-import MenuDropdown from './Menu/MenuDropdown';
-import MenuItem from './Menu/MenuItem';
+import Menu from './Menu/index';
 
 export default function App() {
   const sports = ['Tennis', 'Pickleball', 'Racquetball', 'Squash'];
@@ -9,12 +6,12 @@ export default function App() {
   return (
     <>
       <Menu>
-        <MenuButton>Menu</MenuButton>
-        <MenuDropdown>
+        <Menu.Button>Menu</Menu.Button>
+        <Menu.Dropdown>
           {sports.map((sport, idx) => (
-            <MenuItem key={idx}>{sport}</MenuItem>
+            <Menu.Item key={idx}>{sport}</Menu.Item>
           ))}
-        </MenuDropdown>
+        </Menu.Dropdown>
       </Menu>
     </>
   );
