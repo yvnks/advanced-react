@@ -1,4 +1,3 @@
-import React from "react"
 import classnames from "classnames"
 
 export default function Button({ children, className, size, variant, ...rest }) {
