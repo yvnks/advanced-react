@@ -1,8 +1,9 @@
 import { ToggleContext } from '../hooks/ToggleContext';
 import { useContext } from 'react';
+import { BsStarFill } from 'react-icons/bs';
 
-export default function ToggleOn({ children }) {
+export default function ToggleOn() {
   const { on } = useContext(ToggleContext);
 
-  return on ? children : null;
+  return on ? <BsStarFill className='star filled' /> : null;
 }
