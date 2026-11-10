@@ -2,6 +2,10 @@ import { useContext } from 'react';
 import ThemeContext from './hooks/ThemeContext';
 
 export default function Button() {
-  const value = useContext(ThemeContext);
-  return <button className={`${value}-theme`}>Switch Theme</button>;
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  return (
+    <button onClick={() => toggleTheme()} className={`${theme}-theme`}>
+      Switch Theme
+    </button>
+  );
 }
